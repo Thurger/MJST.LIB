@@ -39,3 +39,10 @@ luac.out
 *.x86_64
 *.hex
 
+# MACOS
+*.DS_Store
+
+# Temporary items
+*.png~
+*.kra~
+*-autosave.kra
