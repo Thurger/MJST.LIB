@@ -19,7 +19,7 @@ NFS.load(SMODS.current_mod.path .. "src/atlases.lua")()
 NFS.load(SMODS.current_mod.path .. "src/Card.lua")()
 NFS.load(SMODS.current_mod.path .. "src/Hand.lua")()
 
-NFS.load(SMODS.current_mod.path .. "src/spectrals/vanish.lua")()
+-- NFS.load(SMODS.current_mod.path .. "src/spectrals/vanish.lua")()
 
 sendInfoMessage("[MJST.LIB]: LOADED!")
 
