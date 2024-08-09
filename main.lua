@@ -14,6 +14,9 @@
 
 sendInfoMessage("[MJST.LIB]: LOADING...")
 
+if not NFS then sendErrorMessage("[MJST.LIB](main.lua line 18): ERROR - NFS missing", "MJST.LIB") return end
+if not SMODS then sendErrorMessage("[MJST.LIB](main.lua line 19): ERROR - SMODS missing", "MJST.LIB") return end
+
 NFS.load(SMODS.current_mod.path .. "src/atlases.lua")()
 
 NFS.load(SMODS.current_mod.path .. "src/Card.lua")()

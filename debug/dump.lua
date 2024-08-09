@@ -1,6 +1,10 @@
 local data, max_depth = ...
 
-local function dump(data, max_depth, depth)
+G = G or {}
+G.mjst_lib = G.mjst_lib or {}
+G.mjst_lib.functions = G.mjst_lib.functions or {}
+
+function G.mjst_lib.functions.dump(data, max_depth, depth)
     if not depth then depth = 0 end
     if not max_depth then max_depth = 3 end
     if type(data) == 'table' then
@@ -28,4 +32,4 @@ local function dump(data, max_depth, depth)
     end
 end
 
-return dump(data, max_depth)
+return G.mjst_lib.functions.dump(data, max_depth)
